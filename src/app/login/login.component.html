@@ -1,0 +1,92 @@
+<!-- <div fxLayout="column" fxLayoutAlign="start" fxFlexFill fxLayoutGap="20px">
+<div  class="header" fxLayout="row" fxLayoutAlign="start" >
+    <img src="assets/images/logo.jpg">
+</div> -->
+<!-- <div fxLayout="row" fxFlexFill fxLayoutGap="20px"> -->
+    <!-- <div  class="header-i" fxLayout="row" fxLayoutAlign="start" >
+        <img src="assets/images/logo.jpg">
+    </div> -->
+    <!-- <div fxLayout="column" fxFlex="35%"  fxLayoutGap="10px" fxLayoutAlign="center start">
+        <div class="login" fxFlex="250px" fxFlexFill >
+            <div class="login-t">Login</div>
+                <form fxLayoutAlign="stretch" fxLayout="column" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <mat-form-field>
+                        <input matInput placeholder="Email">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Password">
+                        <button mat-icon-button matSuffix [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                    <div class="login-t-btn">   
+                        <button mat-raised-button color="primary" type="submit">Login</button><span><a href="./auth/forgotpassword" style="color: #0c49cc;margin-left: 25px;font-weight: 400;" target="_self">Forgot password?</a></span>
+                    </div>
+                </form> 
+        </div>
+        <div fxFlex="250px" fxFlexFill>
+            <div fxLayout="row">
+                <div class="login-t-btn-hr"></div>
+                <div class="login-t-btn-hr-txt">OR</div>
+                <div class="login-t-btn-hr-txt-hr1"></div>
+            </div>
+            <div fxLayout="column">
+                <button class="login-t-btn-hr-txt-hr1-g" mat-raised-button color="primary" type="submit"> Connect with Google<i class="fa fa-google fa-2x"></i></button>
+                <button class="login-t-btn-hr-txt-hr1-g-f" mat-raised-button color="primary" type="submit"> Connect with Facebook<i class="fa fa-facebook-square"></i></button>
+            </div>
+            <div class="login-t-btn-hr-txt-hr1-g-f-tx">
+                Don't have an account?<span><a href="./auth/signup" style="color: #0c49cc;margin-left: 10px;" target="_self">Sign up</a></span>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="column" fxFlex="5%" fxLayoutAlign="center center">
+        <div class="vl"></div>
+    </div>
+    <div fxLayout="column" fxFlex="50%" fxLayoutAlign="center center">
+      <img src="assets/images/events.png">
+    </div>
+  </div>
+</div> -->
+<div class="body" fxLayout="column" fxFill fxLayoutGap="15px"fxLayoutAlign="stretch">
+<div class="header" fxLayout="row" fxFlex="25">
+    <div class="header-txt" fxLayout="row" fxFlex="50">facebook</div>
+    <div class="header-txt-form" fxLayout="row" fxFlex="50">
+        <form>
+            <label>Email:</label>
+            <input placeholder="email" required>
+            <label>Password:</label>
+            <input placeholder="password" type="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+<div fxLayout="row">
+    <div class="sidebar" fxLayout="column" fxFlex="40">
+      Image
+    </div>
+    <div class="content" fxLayout="column" fxLayoutAlign="none" fxFlex="60">
+            <h1>SignUp</h1>
+           <form fxLayoutAlign="stretch" fxLayout="column" fxLayoutAlign="center" class="login-form">
+            <mat-form-field>
+                <input matInput placeholder="First Name" required>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput  placeholder="Last name" required>
+              </mat-form-field>
+             <mat-form-field>
+               <input matInput placeholder="Email" required>
+             </mat-form-field>
+             <mat-form-field>
+                <input matInput placeholder="Re Enter Email" required>
+              </mat-form-field>
+             <mat-form-field>
+               <input matInput type="password" placeholder="Password" required>
+             </mat-form-field>
+             <button mat-raised-button color="primary" type="submit">SignUp</button>
+           </form>
+    </div>
+</div>
+<div class="footer" fxLayout="row" fxFlex="25">
+    Facebook@2011
+</div>
+</div>
