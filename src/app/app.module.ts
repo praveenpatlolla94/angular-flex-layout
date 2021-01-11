@@ -14,13 +14,16 @@ import {MatDividerModule} from '@angular/material/divider';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { SignupComponent } from './signup/signup.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     ReactiveFormsModule,
     MatIconModule,
+    MatCheckboxModule,
     
   ],
   providers: [],

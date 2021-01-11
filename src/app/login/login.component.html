@@ -47,42 +47,57 @@
     </div>
   </div>
 </div> -->
-<div class="body" fxLayout="column" fxFill fxLayoutGap="15px"fxLayoutAlign="stretch">
+<div class="body" fxLayout="column" fxFill fxLayoutGap="7px" fxLayoutAlign="stretch">
 <div class="header" fxLayout="row" fxFlex="25">
-    <div class="header-txt" fxLayout="row" fxFlex="50">facebook</div>
-    <div class="header-txt-form" fxLayout="row" fxFlex="50">
-        <form>
-            <label>Email:</label>
-            <input placeholder="email" required>
-            <label>Password:</label>
-            <input placeholder="password" type="password" required>
-            <button type="submit">Login</button>
-        </form>
+    <div class="header-txt" fxLayout="row" fxFlex="50" >facebook</div>
+    <div class="header-txt-forms" fxLayout="row" fxFlex="50" fxLayoutGap="15px" fxLayoutAlign="center" >
+            <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" required>
+                <mat-hint><mat-checkbox>Keep me logged in</mat-checkbox></mat-hint>
+              </mat-form-field> 
+              <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" placeholder="Password" required>
+                <mat-hint align="end">Forgot your password?</mat-hint>
+              </mat-form-field>
+              <div>
+                <button mat-raised-button color="primary" type="submit">Login</button>
+             </div>
     </div>
 </div>
 <div fxLayout="row">
-    <div class="sidebar" fxLayout="column" fxFlex="40">
-      Image
+    <div class="sidebar" fxLayout="column" fxFlex="50">
+      Facebook helps you Connect with people
     </div>
-    <div class="content" fxLayout="column" fxLayoutAlign="none" fxFlex="60">
+    <div class="content" fxLayout="column" fxLayoutAlign="none" fxFlex="45">
             <h1>SignUp</h1>
-           <form fxLayoutAlign="stretch" fxLayout="column" fxLayoutAlign="center" class="login-form">
-            <mat-form-field>
+            <p>It's free always will be</p>
+            <mat-divider></mat-divider>
+           <form fxLayoutAlign="center" fxLayout="column" fxLayoutAlign="center" class="login-form">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
                 <input matInput placeholder="First Name" required>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
                 <input matInput  placeholder="Last name" required>
               </mat-form-field>
-             <mat-form-field>
+             <mat-form-field appearance="outline">
+                <mat-label> Your Email</mat-label>
                <input matInput placeholder="Email" required>
              </mat-form-field>
-             <mat-form-field>
+             <mat-form-field appearance="outline">
+                <mat-label>Re-enter Email</mat-label>
                 <input matInput placeholder="Re Enter Email" required>
               </mat-form-field>
-             <mat-form-field>
+             <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
                <input matInput type="password" placeholder="Password" required>
              </mat-form-field>
-             <button mat-raised-button color="primary" type="submit">SignUp</button>
+             <div>
+                <button mat-raised-button type="submit">SignUp</button>
+             </div>
            </form>
     </div>
 </div>
