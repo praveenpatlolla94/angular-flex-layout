@@ -51,7 +51,7 @@
 <div class="header" fxLayout="row" fxFlex="25">
     <div class="header-txt" fxLayout="row" fxFlex="50" >facebook</div>
     <div class="header-txt-forms" fxLayout="row" fxFlex="50" fxLayoutGap="15px" fxLayoutAlign="center" >
-            <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
+            <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline" class="header-txt-forms-input">
                 <mat-label>Email</mat-label>
                 <input matInput placeholder="Email" required>
                 <mat-hint><mat-checkbox>Keep me logged in</mat-checkbox></mat-hint>
@@ -62,7 +62,7 @@
                 <mat-hint align="end">Forgot your password?</mat-hint>
               </mat-form-field>
               <div>
-                <button mat-raised-button color="primary" type="submit">Login</button>
+                <button mat-raised-button color="primary" type="submit"><a href="./login">Login</a></button>
              </div>
     </div>
 </div>
@@ -84,7 +84,7 @@
                 <input matInput  placeholder="Last name" required>
               </mat-form-field>
              <mat-form-field appearance="outline">
-                <mat-label> Your Email</mat-label>
+                <mat-label>Your Email</mat-label>
                <input matInput placeholder="Email" required>
              </mat-form-field>
              <mat-form-field appearance="outline">

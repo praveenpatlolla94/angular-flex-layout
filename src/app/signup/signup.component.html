@@ -4,31 +4,30 @@
     <div fxLayout="row">
         <div class="sidebar" fxLayout="column" fxFlex="50" fxLayoutGap="20px" >
           <div class="sidebar-f">facebook </div>
-          <div>facebook helps you connect and share with people</div>
+          <div>Facebook helps you connect and share with the people in your life.</div>
         </div>
-        <div class="content" fxLayout="column" fxLayoutAlign="none" fxFlex="35" fxLayoutGap="20px">
-            <mat-card>
+        <div class="content" fxLayout="column" fxLayoutAlign="none" fxFlex="30" fxLayoutGap="20px">
+            <mat-card class="content-c">
                <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
                  <mat-form-field appearance="outline">
-                   <input matInput placeholder="Email" required>
+                   <input matInput placeholder="Email address and Phone number" required>
                  </mat-form-field>
                  <mat-form-field appearance="outline">
                    <input matInput type="password" placeholder="Password" required>
                  </mat-form-field>
-                 <div>
-                    <button mat-raised-button color="primary" type="submit">Login</button>
-                 </div>
-                 <div [style.text-align]="'center'"><mat-hint>Forgot your password?</mat-hint>
-                    <mat-divider></mat-divider>
-                </div>
+                    <button mat-raised-button color="primary" type="submit">Log In</button>
+                <mat-hint class="content-c-t">Forgot your password?</mat-hint>
                 <div>
-                    <button mat-raised-button color="primary" type="submit">Create New Account</button>
+                  <mat-divider></mat-divider>
+                </div>  
+                <div class="content-c-t-b">
+                    <button mat-raised-button type="submit"><a href="./signup">Create New Account</a></button>
                 </div>  
                </form>
              </mat-card>
+             <div class="content-c-t-b-txt"><span style="color: #000000; font-size: 15px;font-weight: 600;">Create a Page</span> for a celebrity,band or business</div>
         </div>
     </div>
-    <div class="footer" fxLayout="row" fxFlex="25">
-        
+    <div class="footer" fxLayout="row" fxFlex="25">    
     </div>
     </div>
