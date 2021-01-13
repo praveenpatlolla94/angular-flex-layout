@@ -48,25 +48,25 @@
   </div>
 </div> -->
 <div class="body" fxLayout="column" fxFill fxLayoutGap="7px" fxLayoutAlign="stretch">
-<div class="header" fxLayout="row" fxFlex="25">
+<div class="header" fxLayout="row" fxFlex="25%">
     <div class="header-txt" fxLayout="row" fxFlex="50" >facebook</div>
     <div class="header-txt-forms" fxLayout="row" fxFlex="50" fxLayoutGap="15px" fxLayoutAlign="center" >
-            <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline" class="header-txt-forms-input">
-                <mat-label>Email</mat-label>
-                <input matInput placeholder="Email" required>
-                <mat-hint><mat-checkbox>Keep me logged in</mat-checkbox></mat-hint>
+            <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
+                <mat-label class="header-txt-forms">Email</mat-label>
+                <input class="header-txt-forms"  matInput placeholder="Email" required>
+                <mat-hint class="header-txt-forms-hint"><mat-checkbox>Keep me logged in</mat-checkbox></mat-hint>
               </mat-form-field> 
               <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
-                <mat-label>Password</mat-label>
+                <mat-label class="header-txt-forms">Password</mat-label>
                 <input matInput type="password" placeholder="Password" required>
-                <mat-hint align="end">Forgot your password?</mat-hint>
+                <mat-hint align="end" class="header-txt-forms-hint">Forgot your password?</mat-hint>
               </mat-form-field>
               <div>
-                <button mat-raised-button color="primary" type="submit"><a href="./login">Login</a></button>
+                <button mat-raised-button color="primary" type="submit">Login</button>
              </div>
     </div>
 </div>
-<div fxLayout="row">
+<div fxLayout="row" fxFlex="50%">
     <div class="sidebar" fxLayout="column" fxFlex="50">
       Facebook helps you Connect with people
     </div>
@@ -101,7 +101,7 @@
            </form>
     </div>
 </div>
-<div class="footer" fxLayout="row" fxFlex="25">
+<div class="footer" fxLayout="row" fxFlex="25%">
     Facebook@2011
 </div>
 </div>
