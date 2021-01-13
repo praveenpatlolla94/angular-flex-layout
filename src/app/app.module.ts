@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SignupComponent } from './signup/signup.component';
+import { InstagramComponent } from './instagram/instagram.component';
 
 
 
@@ -24,7 +25,8 @@ import { SignupComponent } from './signup/signup.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    InstagramComponent
   ],
   imports: [
     BrowserModule,
