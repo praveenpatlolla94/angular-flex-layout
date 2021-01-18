@@ -8,18 +8,17 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
-  hide=true;
+  hide = true;
   constructor(
-    private formBuilder: FormBuilder, 
-  ) 
-  { 
-    
+    private formBuilder: FormBuilder,
+  ) {
+
   }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      email:'',
-      password:'',
+      email: '',
+      password: '',
     });
   }
   onSubmit() {

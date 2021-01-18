@@ -3,10 +3,10 @@
     <img src="assets/images/logo.jpg">
 </div> -->
 <!-- <div fxLayout="row" fxFlexFill fxLayoutGap="20px"> -->
-    <!-- <div  class="header-i" fxLayout="row" fxLayoutAlign="start" >
+<!-- <div  class="header-i" fxLayout="row" fxLayoutAlign="start" >
         <img src="assets/images/logo.jpg">
     </div> -->
-    <!-- <div fxLayout="column" fxFlex="35%"  fxLayoutGap="10px" fxLayoutAlign="center start">
+<!-- <div fxLayout="column" fxFlex="35%"  fxLayoutGap="10px" fxLayoutAlign="center start">
         <div class="login" fxFlex="250px" fxFlexFill >
             <div class="login-t">Login</div>
                 <form fxLayoutAlign="stretch" fxLayout="column" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -47,61 +47,63 @@
     </div>
   </div>
 </div> -->
-<div class="body" fxLayout="column"  fxLayoutGap="7px" fxFlex="100%">
-<div class="header" fxLayout="row" fxFlex="25%">
-    <div class="header-txt" fxLayout="row" fxFlex="50" >facebook</div>
-    <div class="header-txt-forms" fxLayout="row" fxFlex="50" fxLayoutGap="15px" fxLayoutAlign="center" >
+<div class="fb" fxLayout="column" fxLayoutGap="7px" fxFlex="100%">
+    <div class="fb-h" fxLayout="row" fxFlex="25%" fxLayoutAlign="space-around">
+        <div class="fb-h-txt" fxLayout="row" fxFlex="50">facebook</div>
+        <div class="fb-h-txt-f" fxLayout="row" fxFlex="50" fxLayoutGap="15px" fxLayoutAlign="center">
             <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
-                <mat-label class="header-txt-forms">Email</mat-label>
-                <input class="header-txt-forms"  matInput placeholder="Email" required>
-                <mat-hint class="header-txt-forms-hint"><mat-checkbox>Keep me logged in</mat-checkbox></mat-hint>
-              </mat-form-field> 
-              <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
-                <mat-label class="header-txt-forms">Password</mat-label>
+                <mat-label class="fb-h-txt-f">Email</mat-label>
+                <input class="fb-h-txt-f"matInput placeholder="Email" required>
+                <mat-hint class="fb-h-txt-f-h">
+                    <mat-checkbox>Keep me logged in</mat-checkbox>
+                </mat-hint>
+            </mat-form-field>
+            <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
+                <mat-label class="fb-h-txt-f">Password</mat-label>
                 <input matInput type="password" placeholder="Password" required>
-                <mat-hint align="end" class="header-txt-forms-hint">Forgot your password?</mat-hint>
-              </mat-form-field>
-              <div>
-                <button mat-raised-button color="primary" type="submit">Login</button>
-             </div>
+                <mat-hint align="end" class="fb-h-txt-f-h">Forgot your password?</mat-hint>
+            </mat-form-field>
+            <div>
+                <button class="fb-h-txt-f-h-btn" mat-raised-button color="primary" type="submit">Login</button>
+            </div>
+        </div>
     </div>
-</div>
-<div fxLayout="row" fxFlex="50%">
-    <div class="sidebar" fxLayout="column" fxFlex="50">
-      Facebook helps you Connect with people
-    </div>
-    <div class="content" fxLayout="column" fxLayoutAlign="none" fxFlex="45">
+    <div fxLayout="row" fxFlex="50%">
+        <div class="fb-h-txt-f-h-btn-s" fxLayout="column" fxFlex="50">
+            Facebook helps you Connect with people
+        </div>
+        <div class="fb-h-txt-f-h-btn-s-c" fxLayout="column" fxLayoutAlign="none" fxFlex="45">
             <h1>SignUp</h1>
             <p>It's free always will be</p>
-            <mat-divider></mat-divider>
-           <form fxLayoutAlign="center" fxLayout="column" fxLayoutAlign="center" class="login-form">
-            <mat-form-field appearance="outline">
-                <mat-label>First Name</mat-label>
-                <input matInput placeholder="First Name" required>
-              </mat-form-field>
-              <mat-form-field appearance="outline">
-                <mat-label>Last Name</mat-label>
-                <input matInput  placeholder="Last name" required>
-              </mat-form-field>
-             <mat-form-field appearance="outline">
-                <mat-label>Your Email</mat-label>
-               <input matInput placeholder="Email" required>
-             </mat-form-field>
-             <mat-form-field appearance="outline">
-                <mat-label>Re-enter Email</mat-label>
-                <input matInput placeholder="Re Enter Email" required>
-              </mat-form-field>
-             <mat-form-field appearance="outline">
-                <mat-label>Password</mat-label>
-               <input matInput type="password" placeholder="Password" required>
-             </mat-form-field>
-             <div>
-                <button mat-raised-button type="submit">SignUp</button>
-             </div>
-           </form>
+            <mat-divider class="fb-h-txt-f-h-btn-s-c-d" ></mat-divider>
+            <form fxLayoutAlign="center" fxLayout="column" fxLayoutAlign="center" class="login-form">
+                <mat-form-field appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="First Name" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="Last name" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Your Email</mat-label>
+                    <input matInput placeholder="Email" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Re-enter Email</mat-label>
+                    <input matInput placeholder="Re Enter Email" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="Password" required>
+                </mat-form-field>
+                <div>
+                    <button class="fb-h-txt-f-h-btn-s-c-d-bt" mat-raised-button type="submit">SignUp</button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-<div class="footer" fxLayout="row" fxFlex="25%">
-    Facebook@2011
-</div>
+    <div  class="fb-h-txt-f-h-btn-s-c-d-bt-b" fxLayout="row" fxFlex="25%">
+        Facebook@2011
+    </div>
 </div>
