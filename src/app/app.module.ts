@@ -18,7 +18,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SignupComponent } from './signup/signup.component';
 import { InstagramComponent } from './instagram/instagram.component';
-
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -43,7 +43,7 @@ import { InstagramComponent } from './instagram/instagram.component';
     ReactiveFormsModule,
     MatIconModule,
     MatCheckboxModule,
-    
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

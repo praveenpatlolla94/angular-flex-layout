@@ -1,5 +1,5 @@
-<div class="i" fxLayout="column" fxFlexFill>
-    <div class="i-h" fxLayout="row" fxFlex="10%" fxLayoutAlign="space-around" fxLayoutGap="5px">
+<div class="i" fxLayout="column" fxFlexFill fxLayoutAlign="space-around">
+    <div class="i-h" fxLayout="row" fxFlex="8%" fxLayoutAlign="space-around" fxLayoutGap="5px">
         <div class="i-h-t">Instagram</div>
         <div>
             <input matInput placeholder="Search">
@@ -11,13 +11,13 @@
         </div>
     </div>
     <mat-divider></mat-divider>
-    <div class="i-h-t-c" fxLayout="row" fxFlex="40%" fxLayoutGap="90px">
+    <div class="i-h-t-c" fxLayout="row" fxFlex="40%"  fxLayoutAlign="space-evenly" >
         <div fxLayout="column" class="i-h-t-c-p">
 
         </div>
-        <div fxLayout="column" fxLayoutAlign="space-around" fxLayoutAlign="space-evenly" *ngFor="let list of users">
+        <div fxLayout="column"  *ngFor="let list of users">
             <div fxLayout="row" class="i-h-t-c-p-d" fxLayoutGap="15px" >
-                <h1>{{list.name}}</h1>
+                <div>{{list.name}}</div>
                 <button mat-raised-button color="primary" type="submit">Fallow</button>
                 <select matNativeControl>
                     <option value=""></option>
@@ -39,18 +39,48 @@
             </div>
         </div>
     </div>
-    <mat-divider class="i-h-t-c-p-d-tc-di" ></mat-divider>
-    <div class="post" class="i-h-t-c-p-d-tc-di-post"  fxLayout="column" fxFlex="50%">
-        <div fxLayout="row" fxLayoutGap="90px" class="i-h-t-c-p-d-tc-di-post-txt" >
+    <div class="post" class="i-h-t-c-p-d-tc-di-post"  fxLayout="column" fxFlex="52%" fxLayoutAlign="space-around">
+        <div fxLayout="row" fxLayoutAlign="space-evenly">
+            <mat-divider class="i-h-t-c-p-d-tc-di" ></mat-divider>
+        </div>
+        <div fxLayout="row" fxLayoutGap="90px" fxLayoutAlign="center" class="i-h-t-c-p-d-tc-di-post-txt" >
             <!-- <div>{{list.name}}</div> -->
             <h3>POST</h3>
             <h3>REELS</h3>
             <h3>IGTV</h3>
+            <h3>TAGEED</h3>
         </div>
-        <div fxLayout="row" fxLayoutGap="25px" class="i-h-t-c-p-d-tc-di-post-txt-cards" >
+        <!-- <div
+         fxLayout="row"
+         fxLayoutGap="20px" 
+         class="i-h-t-c-p-d-tc-di-post-txt-cards" 
+         fxLayoutAlign="space-around"
+
+        > -->
+        <div fxLayout="row" class="i-h-t-c-p-d-tc-di-post-txt-cards" fxLayoutAlign="space-evenly">
+        <mat-grid-list cols="3" rowHeight="2:2" class="i-h-t-c-p-d-tc-di-post-txt-cards" [gutterSize]="'20px'">
+            <mat-grid-tile
+                *ngFor="let posts of post"
+                [colspan]="posts.cols"
+                [rowspan]="posts.rows"
+                [style.background]="posts.color">
+               
+           </mat-grid-tile>
+        </mat-grid-list>
+            <!-- <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
             <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
+            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div> -->
         </div>
+            <!-- <div
+            fxLayout="row"
+            fxLayoutGap="20px" 
+            class="i-h-t-c-p-d-tc-di-post-txt-cards" 
+            fxLayoutAlign="space-around"
+            fxFlex="50%"
+            >
+                <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
+                <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
+                <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
+            </div> -->
     </div>
 </div>
