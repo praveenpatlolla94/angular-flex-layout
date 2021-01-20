@@ -4,7 +4,6 @@ export interface Posts {
   color: string;
   cols: number;
   rows: number;
-  text: string;
 }
 @Component({
   selector: 'app-instagram',
@@ -17,7 +16,10 @@ export class InstagramComponent implements OnInit {
       "name":"Virat kholi",
       "post":"2000",
       "followers":"2m",
-      "following":"200"
+      "following":"200",
+      "type":"Carpediem",
+      "site":"@one8world",
+      "members":"Followed by some members"
     },
     
   ]
@@ -36,13 +38,13 @@ export class InstagramComponent implements OnInit {
     }
   ]
 
-  post: Posts[] = [
-    {text: 'One', cols:1 ,rows:1, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 1, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Four', cols: 1, rows: 1, color: '#DDBDF1'},
-    {text: 'Five', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Six', cols: 1, rows: 1, color: 'lightgreen'},
+  posts: Posts[] = [
+    {cols: 1, rows: 2, color: 'lightblue'},
+    {cols: 1, rows: 2, color: 'lightgreen'},
+    {cols: 1, rows: 2, color: 'lightpink'},
+    {cols: 1, rows: 2, color: '#DDBDF1'},
+    {cols: 1, rows: 2, color: 'lightpink'},
+    {cols: 1, rows: 2, color: 'lightgreen'},
   ];
   constructor() { }
 

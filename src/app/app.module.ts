@@ -12,11 +12,11 @@ import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
-import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 import { InstagramComponent } from './instagram/instagram.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 
@@ -24,8 +24,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     SignupComponent,
+    LoginComponent,
     InstagramComponent
   ],
   imports: [

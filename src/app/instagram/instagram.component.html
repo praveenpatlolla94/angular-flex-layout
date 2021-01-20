@@ -11,61 +11,58 @@
         </div>
     </div>
     <mat-divider></mat-divider>
-    <div class="i-h-t-c" fxLayout="row" fxFlex="40%" fxLayoutAlign="space-evenly">
-        <div fxLayout="column" class="i-h-t-c-p">
+    <div class="i-h-t-c" fxLayout="row" fxFlex="30%" fxLayoutAlign="center" fxLayoutGap="50px">
+        <div fxLayout="column" class="i-h-t-c-p" >
 
         </div>
-        <div fxLayout="column" *ngFor="let list of users">
+        <div fxLayout="column" *ngFor="let list of users" >
             <div fxLayout="row" class="i-h-t-c-p-d" fxLayoutGap="15px">
                 <div>{{list.name}}</div>
-                <button mat-raised-button color="primary" type="submit">Fallow</button>
+                <button mat-raised-button color="primary" type="submit">Follow</button>
                 <select matNativeControl>
                     <option value=""></option>
                 </select>
                 <mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon>
             </div>
             <div fxLayout="row" fxLayoutGap="25px">
-                <div>{{list.post}}posts</div>
+                <div>{{list.post}} posts</div>
                 <div>{{list.followers}} followers</div>
                 <div>{{list.following}} following</div>
             </div>
             <div fxLayout="column" fxLayoutGap="5px">
-                <h3>Virat.Kohli</h3>
-                <div>Carpediem!</div>
-                <div class="i-h-t-c-p-d-tc">@one8world</div>
+                <h3>{{list.name}}</h3>
+                <div>{{list.type}}</div>
+                <div class="i-h-t-c-p-d-tc">{{list.site}}</div>
             </div>
             <div fxLayout="row">
-                <div>Followed by some members</div>
+                <div>{{list.members}}</div>
             </div>
         </div>
     </div>
     <div fxLayout fxLayoutAlign="space-evenly">
         <mat-divider class="i-h-t-c-p-d-tc-di"></mat-divider>
     </div>
-    <div class="post" class="i-h-t-c-p-d-tc-di-post" fxLayout="column" fxFlex="52%" fxLayoutAlign="center center">
-        <div fxLayout="row" fxLayoutGap="90px" fxLayoutAlign="center" class="i-h-t-c-p-d-tc-di-post-txt">
-            <!-- <div>{{list.name}}</div> -->
-            <h3>POST</h3>
-            <h3>REELS</h3>
-            <h3>IGTV</h3>
-            <h3>TAGEED</h3>
+    <div class="i-h-t-c-p-d-tc-di-post" fxLayout="row" fxFlex="7%" fxLayoutAlign="center" fxLayoutGap="65px">
+        <div fxLayout="row"  *ngFor="let list of category" class="i-h-t-c-p-d-tc-di-post-txt">
+           {{list.name}}
         </div>
-        <div fxLayout="row" class="i-h-t-c-p-d-tc-di-post-txt-cards" fxLayoutAlign="space-evenly">
-            <mat-grid-list cols="3" rowHeight="2:2" class="i-h-t-c-p-d-tc-di-post-txt-cards" [gutterSize]="'20px'">
-                <mat-grid-tile *ngFor="let posts of post" [colspan]="posts.cols" [rowspan]="posts.rows"
-                    [style.background]="posts.color">
+     </div>
+  <div fxLayout="row wrap" class="i-h-t-c-p-d-tc-di-post-txt-cards" fxFlex="60%"  fxLayoutAlign="center" fxLayoutGap="15px"> 
+     <mat-grid-list cols="3" rowHeight="3:1" class="i-h-t-c-p-d-tc-di-post-txt-cards-grid" [gutterSize]="'20px'" >
+        <mat-grid-tile *ngFor="let post of posts" [colspan]="post.cols" [rowspan]="post.rows"
+            [style.background]="post.color">
 
-                </mat-grid-tile>
-            </mat-grid-list>
-        <!-- <div fxLayout="row" fxLayoutGap="20px" class="i-h-t-c-p-d-tc-di-post-txt-cards" fxLayoutAlign="space-around">
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
-        </div>
-        <div fxLayout="row" fxLayoutGap="20px" class="i-h-t-c-p-d-tc-di-post-txt-cards" fxLayoutAlign="space-around">
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-box"></div>
-        </div> -->
-    </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+      <!-- <div fxLayout="row"  fxLayoutAlign="space-evenly center" fxLayoutGap="20px"> 
+             <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+       </div>
+      <div fxLayout="row"  fxLayoutAlign="space-evenly center" fxLayoutGap="20px">  
+             <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+      </div> -->
+   </div>
 </div>

@@ -1,36 +1,109 @@
-<div class="f" fxLayout="column" fxLayoutGap="7px">
-  <div class="f-h" fxLayout="row" fxFlex="25%">
-  </div>
-  <div fxLayout="row" fxFlex="50%" fxLayoutAlign="center center">
-    <div class="f-h-s" fxLayout="column" fxFlex="50" fxLayoutGap="20px">
-      <div class="f-h-s-t">facebook </div>
-      <div>Facebook helps you connect and share with the people in your life.</div>
+<!-- <div fxLayout="column" fxLayoutAlign="start" fxFlexFill fxLayoutGap="20px">
+<div  class="header" fxLayout="row" fxLayoutAlign="start" >
+    <img src="assets/images/logo.jpg">
+</div> -->
+<!-- <div fxLayout="row" fxFlexFill fxLayoutGap="20px"> -->
+<!-- <div  class="header-i" fxLayout="row" fxLayoutAlign="start" >
+        <img src="assets/images/logo.jpg">
+    </div> -->
+<!-- <div fxLayout="column" fxFlex="35%"  fxLayoutGap="10px" fxLayoutAlign="center start">
+        <div class="login" fxFlex="250px" fxFlexFill >
+            <div class="login-t">Login</div>
+                <form fxLayoutAlign="stretch" fxLayout="column" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <mat-form-field>
+                        <input matInput placeholder="Email">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Password">
+                        <button mat-icon-button matSuffix [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                    <div class="login-t-btn">   
+                        <button mat-raised-button color="primary" type="submit">Login</button><span><a href="./auth/forgotpassword" style="color: #0c49cc;margin-left: 25px;font-weight: 400;" target="_self">Forgot password?</a></span>
+                    </div>
+                </form> 
+        </div>
+        <div fxFlex="250px" fxFlexFill>
+            <div fxLayout="row">
+                <div class="login-t-btn-hr"></div>
+                <div class="login-t-btn-hr-txt">OR</div>
+                <div class="login-t-btn-hr-txt-hr1"></div>
+            </div>
+            <div fxLayout="column">
+                <button class="login-t-btn-hr-txt-hr1-g" mat-raised-button color="primary" type="submit"> Connect with Google<i class="fa fa-google fa-2x"></i></button>
+                <button class="login-t-btn-hr-txt-hr1-g-f" mat-raised-button color="primary" type="submit"> Connect with Facebook<i class="fa fa-facebook-square"></i></button>
+            </div>
+            <div class="login-t-btn-hr-txt-hr1-g-f-tx">
+                Don't have an account?<span><a href="./auth/signup" style="color: #0c49cc;margin-left: 10px;" target="_self">Sign up</a></span>
+            </div>
+        </div>
     </div>
-    <div class="f-h-s-t-c" fxLayout="column" fxLayoutAlign="none" fxFlex="30" fxLayoutGap="20px">
-      <mat-card class="f-h-s-t-c-card">
-        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
-          <mat-form-field appearance="outline">
-            <input matInput placeholder="Email address and Phone number" required>
-          </mat-form-field>
-          <mat-form-field appearance="outline">
-            <input matInput type="password" placeholder="Password" required>
-          </mat-form-field>
-          <button class="f-h-s-t-c-card-b" mat-raised-button color="primary" type="submit">Log In</button>
-          <mat-hint class="f-h-s-t-c-card-b-txt">Forgotten password?</mat-hint>
-          <div>
-            <mat-divider></mat-divider>
-          </div>
-          <div>
-            <button mat-raised-button type="submit" class="f-h-s-t-c-card-b-txt-btn">
-              <nav><a routerLink="/signup">Create New Account</a></nav>
-            </button>
-          </div>
-        </form>
-      </mat-card>
-      <div class="f-h-s-t-c-card-b-txt-btn-tx"><span class="f-h-s-t-c-card-b-txt-btn-tx-txts">Create a
-          Page</span> for a celebrity,band or business</div>
+    <div fxLayout="column" fxFlex="5%" fxLayoutAlign="center center">
+        <div class="vl"></div>
+    </div>
+    <div fxLayout="column" fxFlex="50%" fxLayoutAlign="center center">
+      <img src="assets/images/events.png">
     </div>
   </div>
-  <div fxLayout="row" fxFlex="25%">
-  </div>
+</div> -->
+<div class="fb" fxLayout="column" fxLayoutGap="7px">
+    <div class="fb-h" fxLayout="row" fxFlex="15%" fxLayoutAlign="start center">
+        <div class="fb-h-txt" fxLayout="row" fxFlex="50">facebook</div>
+        <div class="fb-h-txt-f"  fxLayoutGap="15px" fxLayoutAlign="center center">
+            <mat-form-field fxLayout="column" fxFlex="250px"  appearance="outline">
+                <mat-label class="fb-h-txt-f">Email</mat-label>
+                <input class="fb-h-txt-f"matInput placeholder="Email" required>
+                <mat-hint class="fb-h-txt-f-tx">
+                    <mat-checkbox>Keep me logged in</mat-checkbox>
+                </mat-hint>
+            </mat-form-field>
+            <mat-form-field fxLayout="column" fxFlex="250px" appearance="outline">
+                <mat-label class="fb-h-txt-f">Password</mat-label>
+                <input matInput type="password" placeholder="Password" required>
+                <mat-hint align="end" class="fb-h-txt-f-tx">Forgot your password?</mat-hint>
+            </mat-form-field>
+            <div>
+                <button class="fb-h-txt-f-tx-btn" mat-raised-button color="primary" type="submit">Login</button>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="row" fxFlex="72%">
+        <div class="fb-h-txt-f-tx-btn-s" fxLayout="column" fxFlex="50" fxLayoutAlign="center center">
+            Facebook helps you Connect and share with people in life
+        </div>
+        <div class="fb-h-txt-f-tx-btn-s-c" fxLayout="column" fxLayoutAlign="none" fxFlex="45">
+            <h1>SignUp</h1>
+            <p>It's free always will be</p>
+            <mat-divider class="fb-h-txt-f-tx-btn-s-c-d" ></mat-divider>
+            <form fxLayoutAlign="center" fxLayout="column" fxLayoutAlign="center" class="login-form">
+                <mat-form-field appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="First Name" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="Last name" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Your Email</mat-label>
+                    <input matInput placeholder="Email" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Re-enter Email</mat-label>
+                    <input matInput placeholder="Re Enter Email" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="Password" required>
+                </mat-form-field>
+                <div>
+                    <button class="fb-h-txt-f-tx-btn-s-c-d-bt" mat-raised-button type="submit">SignUp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div  class="fb-h-txt-f-tx-btn-s-c-d-bt-b" fxLayout="row" fxFlex="13%" fxLayoutAlign="start center">
+        Facebook@2011
+    </div>
 </div>
