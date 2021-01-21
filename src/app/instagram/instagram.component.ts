@@ -45,6 +45,9 @@ export class InstagramComponent implements OnInit {
     {cols: 1, rows: 2, color: '#DDBDF1'},
     {cols: 1, rows: 2, color: 'lightpink'},
     {cols: 1, rows: 2, color: 'lightgreen'},
+    {cols: 1, rows: 2, color: '#DDBDF1'},
+    {cols: 1, rows: 2, color: 'lightpink'},
+    {cols: 1, rows: 2, color: 'lightgreen'},
   ];
   constructor() { }
 
