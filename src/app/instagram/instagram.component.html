@@ -1,5 +1,5 @@
 <div class="i" fxLayout="column" fxLayoutAlign="space-around">
-    <div class="i-h" fxLayout="row" fxFlex="8%" fxLayoutAlign="space-around" fxLayoutGap="5px">
+    <div class="i-h" fxLayout="row" fxFlex="8%" fxLayoutAlign="space-around center" fxLayoutGap="5px">
         <div class="i-h-t">Instagram</div>
         <div>
             <input matInput placeholder="Search">
@@ -47,20 +47,27 @@
            {{list.name}}
         </div>
      </div>
-  <div fxLayout="row wrap" class="i-h-t-c-p-d-tc-di-post-txt-cards" fxFlex="60%"  fxLayoutAlign="center" fxFlexfill> 
-     <mat-grid-list cols="3" rowHeight="3:1" class="i-h-t-c-p-d-tc-di-post-txt-cards-grid" [gutterSize]="'20px'" >
+  <div fxLayout="row" class="i-h-t-c-p-d-tc-di-post-txt-cards" fxFlex="50%"  fxLayoutAlign="center" fxFlexfill> 
+     <!-- <mat-grid-list cols="3" rowHeight="3:1" class="i-h-t-c-p-d-tc-di-post-txt-cards-grid" [gutterSize]="'20px'" >
         <mat-grid-tile *ngFor="let post of posts" [colspan]="post.cols" [rowspan]="post.rows"
             [style.background]="post.color">
 
         </mat-grid-tile>
-    </mat-grid-list>
-      <!-- <div fxLayout="row wrap"  fxLayoutAlign="center" fxLayoutGap="20px"> 
+    </mat-grid-list> -->
+      <div fxLayout="column"  fxLayoutAlign="start" fxLayoutGap="20px"> 
             <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
             <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+      </div>
+      <div fxLayout="column"  fxLayoutAlign="start" fxLayoutGap="20px"> 
             <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
             <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
-            <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
-      </div> -->
+      </div>
+      <div fxLayout="column"  fxLayoutAlign="start" fxLayoutGap="20px"> 
+        <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+        <div class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box"></div>
+     </div>
+   </div>
+   <div fxLayout="row" fxFlex="5%" class="i-h-t-c-p-d-tc-di-post-txt-cards-grid-box-f">
+
    </div>
 </div>
