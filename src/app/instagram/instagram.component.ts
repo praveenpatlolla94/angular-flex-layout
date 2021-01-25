@@ -17,7 +17,7 @@ export class InstagramComponent implements OnInit {
       "post":"2000",
       "followers":"2m",
       "following":"200",
-      "type":"Carpediem",
+      "type":"Carpediem!",
       "site":"@one8world",
       "members":"Followed by some members"
     },
@@ -25,7 +25,7 @@ export class InstagramComponent implements OnInit {
   ]
   category=[
     {
-      "name":"POST"
+      "name":"POSTS"
     },
     {
       "name":"REELS"
@@ -39,15 +39,15 @@ export class InstagramComponent implements OnInit {
   ]
 
   posts: Posts[] = [
-    {cols: 1, rows: 2, color: 'lightblue'},
-    {cols: 1, rows: 2, color: 'lightgreen'},
-    {cols: 1, rows: 2, color: 'lightpink'},
-    {cols: 1, rows: 2, color: '#DDBDF1'},
-    {cols: 1, rows: 2, color: 'lightpink'},
-    {cols: 1, rows: 2, color: 'lightgreen'},
-    {cols: 1, rows: 2, color: '#DDBDF1'},
-    {cols: 1, rows: 2, color: 'lightpink'},
-    {cols: 1, rows: 2, color: 'lightgreen'},
+    {cols: 1, rows: 2.5, color: 'lightblue'},
+    {cols: 1, rows: 2.5, color: 'lightgreen'},
+    {cols: 1, rows: 2.5, color: 'lightpink'},
+    {cols: 1, rows: 2.5, color: '#DDBDF1'},
+    {cols: 1, rows: 2.5, color: 'lightpink'},
+    {cols: 1, rows: 2.5, color: 'lightgreen'},
+    {cols: 1, rows: 2.5, color: '#DDBDF1'},
+    {cols: 1, rows: 2.5, color: 'lightpink'},
+    {cols: 1, rows: 2.5, color: 'lightgreen'},
   ];
   constructor() { }
 
