@@ -2,27 +2,34 @@
     <div class="i-h" fxLayout="row" fxFlex="8%" fxLayoutAlign="space-around center" fxLayoutGap="5px">
         <div class="i-h-t">Instagram</div>
         <div>
-            <input class="i-h-t-s"  matInput  placeholder="Search">
+            <input class="i-h-t-s" placeholder="Search">
+           <!-- <mat-icon>search</mat-icon> -->
         </div>
         <div fxLayoutGap="15px">
             <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
             <mat-icon aria-hidden="false" aria-label="Example home icon">message</mat-icon>
+            <mat-icon>favorite_border</mat-icon>
             <mat-icon aria-hidden="false" aria-label="Example home icon">share</mat-icon>
         </div>
     </div>
     <mat-divider></mat-divider>
     <div class="i-h-t-c" fxLayout="row" fxFlex="35%" fxLayoutAlign="space-evenly">
-        <!-- <div fxLayout="column"></div> -->
         <div fxLayout="column" class="i-h-t-c-p">
                 <img src="assets/images/virat.jpg">
         </div>
         <div fxLayout="column" *ngFor="let list of users">
             <div fxLayout="row" class="i-h-t-c-p-d" fxLayoutGap="15px">
                 <h2>{{list.name}}</h2>
+                <div style="color: #0095f6;">
+                    <mat-icon>new_releases</mat-icon>
+                </div> 
                 <button class="i-h-t-c-p-d-btn"  type="submit">Follow</button>
-                <select matNativeControl>
-                    <option value=""></option>
-                </select>
+                <!-- <select matNativeControl>
+                    <mat-icon>more_horizontal</mat-icon>
+                </select> -->
+                <div class="i-h-t-c-p-d-btn-a">
+                    <mat-icon>arrow_drop_down</mat-icon>
+                </div>
                 <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
                     <mat-icon>more_horizontal</mat-icon>
                   </button>
@@ -53,24 +60,25 @@
         </div>
     </div>
     <div fxLayout="row" class="i-h-t-c-p-d-tx-tc-di-post-txt-cards" fxFlex="50%" fxLayoutAlign="center" fxFlexfill>
-        <mat-grid-list cols="3" rowHeight="3:1" class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid" [gutterSize]="'20px'">
+        <!-- <mat-grid-list cols="3" rowHeight="3:1" class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid" [gutterSize]="'20px'">
             <mat-grid-tile *ngFor="let post of posts" [colspan]="post.cols" [rowspan]="post.rows"
                 [style.background]="post.color">
-
+                <ng-container *ngFor="let post of posts">
+                    <img [src]="post.imageUrl"/>
+                  </ng-container>
             </mat-grid-tile>
-        </mat-grid-list>
-        <!-- <div fxLayout="column"  fxLayoutAlign="start" fxLayoutGap="20px"> 
-            <div class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid-box">
+        </mat-grid-list> -->
+     <!-- <div fxLayout="row wrap" fxLayoutAlign="space-around" *ngFor="let item of items" class="item">
+        <div [ngStyle]="{'background-color': item.color}">
+            {{item.text}}
+        </div>
+    </div> -->
+    <div fxLayout="row wrap" fxLayoutGap="15px" fxLayoutAlign="space-evenly">
+        <ng-container *ngFor="let _ of [1,2,3,4,5,6,7,8,9]">
+            <div class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid-box" fxFlex="0 1 calc(32%-15px)">
+                <img src="assets/images/virat1.png">
             </div>
-            <div class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid-box"></div>
-      </div>
-      <div fxLayout="column"  fxLayoutAlign="start" fxLayoutGap="20px"> 
-            <div class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid-box"></div>
-            <div class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid-box"></div>
-      </div>
-      <div fxLayout="column"  fxLayoutAlign="start" fxLayoutGap="20px"> 
-        <div class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid-box"></div>
-        <div class="i-h-t-c-p-d-tx-tc-di-post-txt-cards-grid-box"></div>
-     </div> -->
+        </ng-container>
+    </div>
     </div>
 </div>
